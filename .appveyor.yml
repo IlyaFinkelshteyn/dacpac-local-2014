@@ -9,5 +9,9 @@ deploy:
 - provider: Local
   Mydacpac.deploy_database: true
   Mydacpac.drop_objects_not_in_source: true
-  Mydacpac.do_not_drop_users: true  
+  Mydacpac.do_not_drop_users: true
+  Mydacpac.ignore_permissions: true
+  Mydacpac.ignore_user_settings_objects: true
+  Mydacpac.ignore_login_sids: true
+  Mydacpac.ignore_role_membership: true
   Mydacpac.connection_string: Server=(local)\SQLEXPRESS;Database=my_app;Integrated security=SSPI;
