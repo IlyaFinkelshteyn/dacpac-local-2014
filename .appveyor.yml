@@ -8,5 +8,6 @@ artifacts:
 deploy:
 - provider: Local
   Mydacpac.deploy_database: true
-  Mydacpac.drop_objects_not_in_source: true  
+  Mydacpac.drop_objects_not_in_source: true
+  Mydacpac.do_not_drop_users: true  
   Mydacpac.connection_string: Server=(local)\SQLEXPRESS;Database=my_app;Integrated security=SSPI;
